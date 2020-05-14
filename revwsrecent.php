@@ -44,11 +44,6 @@ class RevwsRecent extends Module
         return true;
     }
 
-    public function uninstall() {
-        $this->clearCache();
-        return parent::uninstall();
-    }
-
     public function hookDisplayHomeTab() {
         return $this->display(__FILE__, 'tab.tpl');
     }
